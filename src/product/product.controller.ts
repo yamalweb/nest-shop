@@ -17,7 +17,9 @@ export class ProductController {
   async create(@Body() dto: Omit<ProductModel, '_id'>) {}
 
   @Get(':id')
-  async get(@Param('id') id: string) {}
+  async get(@Param('id') id: string) {
+    return '23222';
+  }
 
   @Delete(':id')
   async delete(@Param('id') id: string) {}
